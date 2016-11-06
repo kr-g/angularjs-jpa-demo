@@ -4,7 +4,7 @@ just sample code
 
 
 - springboot
-- res
+- rest
 - jpa
 - angularjs
 - bootstrasp
