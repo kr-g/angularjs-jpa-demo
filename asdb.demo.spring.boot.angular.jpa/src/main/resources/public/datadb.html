@@ -1,0 +1,22 @@
+
+<div ng-controller="getdatadb" >
+
+	<div>
+		Key: <input min="0" ng-model="keyval" ng-keypress="($event.which === 13)?refresh():null">	
+		<button class="btn btn-default" ng-click="refresh()">lookup</button>
+	</div>
+
+	<br /> <br /> <br />
+	<div>{{ datadb.key }} = {{ datadb.value }}</div>
+	<br /> <br /> <br />
+
+
+</div>
+
+<div ng-controller="getalldatadb">
+
+	choose one of { <span
+		ng-repeat="kv in alldatadb._embedded.keyValueElements">{{kv.primKey}}
+	</span> } <br />
+
+</div>
